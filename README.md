@@ -1,5 +1,9 @@
 # **TUGAS PBO TM 5 (SWING JDBC)**
 ___
+## **Daftar Isi**
+- [FramePaspor](https://github.com/anisatanti/PBO_Pertemuan_Kelima/blob/main/FramePaspor.java)
+- [DbUtils](https://github.com/anisatanti/PBO_Pertemuan_Kelima/blob/main/DbUtils.java)
+___
 ## **_Deskripsi_**
 Proyek ini merupakan Tugas Pertemuan Kelima Mata Kuliah Pemrograman Berorientasi Objek. Membuat Aplikasi CRUD pada Netbeans Java yang terhubung dengan Aplikasi basis data PostgreSQL. Dalam proyek ini mengimplementasikan operasi CRUD (Create, Read, Update, Delete) pada database yang berisi tabel DataPaspor. Untuk dapat menjalankan Aplikasi pastikan Aplikasi terhubung ke database menggunakan JDBC, dengan library PostgreSQL.
 ___
@@ -12,22 +16,22 @@ ___
 -	Membuat method tampil dengan perintah sql “SELECT * FROM DataPaspor;” untuk menampilkan data yang di inputkan.
 -	Public FramePaspor merupakan constructor dari kelas FramePaspor berisi method initComponents() untuk menginisialisasi komponen GUI, method koneksi yang merupakan method untuk mengatur koneksi ke database, dan method tampil untuk menampilkan data ke dalam tabel dari database.
 
-#### **btnInsertActionPerformed**
+### **btnInsertActionPerformed**
 berfungsi untuk menambahkan data ke dalam database. Berisi perintah sql "INSERT INTO DataPaspor (id_Paspor, nama_pemilik, kewarganegaraan, tanggal_lahir, jenis_kelamin) VALUES (?, ?, ?, ?, ?)". Pastikan dalam menginput data semua data tidak ada yang kosong. Jika data ada yang belum terisi maka akan menampilkan peringatan untuk melengkapi data yang belum terisi.
     
-#### **btnUpdateActionPerformed**
+### **btnUpdateActionPerformed**
 berfungsi untuk mengupdate data yang telah di input. Berisi perintah sql "UPDATE DataPaspor SET nama_pemilik=?, kewarganegaraan=?, tanggal_lahir=?, jenis_kelamin=? WHERE id_Paspor=?". Pastikan dalam mengupdate data semua data tidak ada yang kosong. Jika data ada yang belum terisi maka akan menampilkan peringatan untuk melengkapi data yang belum terisi.
 
-#### **btnDeleteActionPerformed**
+### **btnDeleteActionPerformed**
 berfungsi untuk menghapus data dalam tabel database. Berisi perintah sql “DELETE FROM DataPaspor WHERE id_Paspor = ?”. MEnghapus data dilakukan dengan menginputkan IDPaspor yang dituju kemudia klik button Delete dan data berhasil dihapus.
        
-#### **btnClearActionPerformed**
+### **btnClearActionPerformed**
 berfungsi menghapus inputan yang dimasukkan dalam Frame GUI secara otomatis.
        
-#### **tblPasporMouseClicked**
+### **tblPasporMouseClicked**
 berfungsi untuk menampilkan data dalam bentuk tabel dan memungkinkan pengguna untuk mengeditnya
         
-#### **btnExitActionPerformed**
+### **btnExitActionPerformed**
 berfungsi untuk menutup atau keluar dari aplikasi ketika pengguna mengklik tombol tersebut
 ___
 ### **Kelas DbUtils**
